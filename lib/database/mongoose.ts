@@ -17,7 +17,7 @@ declare global {
 const cached: MongooseConnection = global.mongoose || { conn: null, promise: null };
 
 export const connectToDatabase = async () => {
-  if (cached.conn) return cached.conn;
+  if (cached.conn) {console.log('Using existing MongoDB connection');return cached.conn;}
 
   if (!MONGODB_URL) throw new Error('Missing MONGODB_URL');
 
@@ -27,7 +27,7 @@ export const connectToDatabase = async () => {
   });
 
   cached.conn = await cached.promise;
-
+  console.log('MongoDB connected successfully');
   // Assign the cached connection to global.mongoose
   global.mongoose = cached;
 
