@@ -5,6 +5,7 @@ import BackgroundRemove from '@/form-handling/BackgroundRemove';
 import { auth } from '@clerk/nextjs/server';
 import { redirect } from 'next/navigation';
 import RestoreImageActions from '@/form-handling/RestoreImageActions';
+import ImageGeneration from '@/generative-fill/ImageGeneration';
 // import ImageCompression from '@/form-handling/ImageCompression';
 // import ImageConversion from '@/form-handling/ImageConversion';
 // import TextImageGenerator from '@/components/TextImageGenerator';
@@ -21,7 +22,7 @@ const AddTransformationTypePage = async ({ params: { type } }: SearchParamProps)
   const renderTransformationForm = () => {
     switch (transformation.title) {
       case 'Generative Fill':
-        return <TextToImageGenerator />;
+        return <ImageGeneration />;
       case 'Restore Image':
         return <RestoreImageActions />;
       case 'Object Remove':
