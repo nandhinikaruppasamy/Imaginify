@@ -4,7 +4,12 @@ import BackgroundRemove from '@/form-handling/BackgroundRemove';
 // import { getUserById } from '@/lib/actions/user.actions';
 import { auth } from '@clerk/nextjs/server';
 import { redirect } from 'next/navigation';
-
+import RestoreImageActions from '@/form-handling/RestoreImageActions';
+// import ImageCompression from '@/form-handling/ImageCompression';
+// import ImageConversion from '@/form-handling/ImageConversion';
+// import TextImageGenerator from '@/components/TextImageGenerator';
+import TextToImageGenerator from '@/image-generation/TextToImageGenerator';
+import App from '@/image-generation/App'
 const AddTransformationTypePage = async ({ params: { type } }: SearchParamProps) => {
   const { userId } = auth();
   const transformation = transformationTypes[type];
@@ -15,12 +20,12 @@ const AddTransformationTypePage = async ({ params: { type } }: SearchParamProps)
 
   const renderTransformationForm = () => {
     switch (transformation.title) {
-      // case 'Generative Fill':
-      //   return <GenerativeFill />;
-      // case 'Restore Image':
-      //   return <Restore />;
-      // case 'Object Remove':
-      //   return <BackgroundRemovalComponent />;
+      case 'Generative Fill':
+        return <TextToImageGenerator />;
+      case 'Restore Image':
+        return <RestoreImageActions />;
+      case 'Object Remove':
+        return <App />;
       // case 'Object Recolor':
       //   return <ObjectRecolor />;
       case 'Background Remove':
@@ -35,7 +40,7 @@ const AddTransformationTypePage = async ({ params: { type } }: SearchParamProps)
         title={transformation.title}
         subtitle={transformation.subTitle}
       />
-
+    
       <section className="mt-10">
         {/* <TransformationForm 
           action="Add"

@@ -1,0 +1,91 @@
+/* Container styling */
+.container {
+    text-align: center;
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Title styling */
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Input controls styling */
+  .controls {
+    margin-bottom: 20px;
+  }
+  
+  .input {
+    padding: 10px;
+    width: 300px;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 10px;
+  }
+  
+  .numberInput,
+  .colorPicker {
+    padding: 5px;
+    font-size: 14px;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .colorPicker {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+  
+  /* Buttons styling */
+  .generateButton,
+  .downloadButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .generateButton {
+    background-color: #007bff;
+  }
+  
+  .generateButton:hover {
+    background-color: #0056b3;
+  }
+  
+  .downloadButton {
+    background-color: #28a745;
+    margin-top: 10px;
+  }
+  
+  .downloadButton:hover {
+    background-color: #218838;
+  }
+  
+  /* Result image styling */
+  .result {
+    margin-top: 20px;
+  }
+  
+  .image {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-top: 10px;
+  }
+  
