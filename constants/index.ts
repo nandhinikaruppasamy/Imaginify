@@ -15,12 +15,12 @@ export const navLinks = [
       icon: "/assets/icons/stars.svg",
     },
     {
-      label: "Object Remove",
+      label: "Image Edit",
       route: "/transformations/add/remove",
       icon: "/assets/icons/scan.svg",
     },
     {
-      label: "Object Recolor",
+      label: "Image Gallery",
       route: "/transformations/add/recolor",
       icon: "/assets/icons/filter.svg",
     },
@@ -143,8 +143,8 @@ export const navLinks = [
     },
     remove: {
       type: "remove",
-      title: "Object Remove",
-      subTitle: "Identify and eliminate objects from images",
+      title: "Image Edit",
+      subTitle: "Identify and crop the objects from images",
       config: {
         remove: { prompt: "", removeShadow: true, multiple: true },
       },
@@ -152,7 +152,7 @@ export const navLinks = [
     },
     recolor: {
       type: "recolor",
-      title: "Object Recolor",
+      title: "Image Gallery",
       subTitle: "Identify and recolor objects from the image",
       config: {
         recolor: { prompt: "", to: "", multiple: true },

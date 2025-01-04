@@ -34,7 +34,7 @@ const DashboardPage: React.FC = () => {
         <ul>
           <li>🆕 New feature: Batch background removal is now available!</li>
           <li>🎉 Exciting updates to the generative fill tool for enhanced creativity.</li>
-          <li>📢 Reminder: Check out the Object Recolor feature in the tools menu.</li>
+          <li>📢 Reminder: Check out the Image Gallery feature in the tools menu.</li>
         </ul>
       </section>
 

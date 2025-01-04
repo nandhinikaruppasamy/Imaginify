@@ -1,0 +1,184 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  body {
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Container */
+  .container {
+    width: 90%;
+    max-width: 600px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Header */
+  h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #4a4a4a;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 14px;
+    color: #6c757d;
+    margin-bottom: 20px;
+  }
+  
+  /* File Input */
+  input[type="file"] {
+    padding: 10px;
+    font-size: 14px;
+    color: #6c757d;
+    background-color: #f8f9fa;
+    border: 2px dashed #d3d3d3;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  input[type="file"]:hover {
+    border-color: #007bff;
+    background-color: #eef5ff;
+  }
+  
+  /* Controls */
+  .controls {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .controls > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 calc(50% - 10px);
+    min-width: 120px;
+  }
+  
+  /* Labels */
+  label {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #495057;
+  }
+  
+  /* Sliders */
+  input[type="range"] {
+    width: 100%;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="range"]::-webkit-slider-thumb {
+    background-color: #007bff;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    appearance: none;
+  }
+  
+  input[type="range"]::-moz-range-thumb {
+    background-color: #007bff;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+  }
+  
+  /* Buttons */
+  button {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Zoom Buttons Group */
+  /* Zoom Controls Container */
+.zoom-controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Add gap between the buttons */
+    margin-top: 10px; /* Add spacing above if needed */
+  }
+  
+  /* Buttons Style */
+  .zoom-controls button {
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .zoom-controls button:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  /* Grayscale and Reset */
+  .checkbox-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .checkbox-group input[type="checkbox"] {
+    cursor: pointer;
+  }
+  
+  /* Download Button */
+  .download-btn {
+    margin-top: 20px;
+  }
+  
+  .download-btn button {
+    padding: 12px 30px;
+    font-size: 16px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 576px) {
+    .controls {
+      flex-direction: column;
+    }
+  
+    .controls > div {
+      flex: 1 1 100%;
+    }
+  }
+  

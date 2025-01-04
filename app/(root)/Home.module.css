@@ -1,0 +1,85 @@
+.homeContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif; 
+    color: #333; /* Default text color */
+  }
+  
+  /* Welcome Section */
+  .welcomeSection {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .welcomeSection h1 {
+    font-size: 32px; /* Updated font size */
+    font-weight: 700; /* Bold weight for heading */
+    color: #3a3a3a; /* Updated color */
+    padding-bottom: 15px;
+  }
+  
+  .welcomeSection p {
+    font-size: 16px; /* Updated font size */
+    color: #6f6f6f; /* Updated color */
+  }
+  
+  /* Get Started Button */
+  .getStartedButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .getStartedButton:hover {
+    background-color: #357abd;
+  }
+  
+  /* Features Section */
+  .featuresSection {
+    margin-bottom: 40px;
+  }
+  
+  .featuresSection h2 {
+    font-size: 20px; /* Updated font size */
+    margin-bottom: 20px;
+    color: #4a4a4a;
+    margin-left: 5px;
+  }
+  
+  .featuresGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px;
+    justify-items: center; /* Centers items horizontally */
+    align-items: start; /* Aligns items to the top */
+  }
+  
+  .featureCard {
+    background: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .featureCard h3 {
+    margin-bottom: 10px;
+    font-size: 18px; /* Updated font size */
+    font-weight: 600; /* Updated font weight */
+    color: #007bff; /* Primary color */
+  }
+  
+  .featureCard p {
+    font-size: 14px; /* Updated font size */
+    color: #6f757d; /* Muted gray */
+    margin-bottom: 15px;
+  }
+  
+ 
+  

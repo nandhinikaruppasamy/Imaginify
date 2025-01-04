@@ -3,7 +3,7 @@
   flex-direction: column;
   padding: 20px;
   font-family: 'Poppins', sans-serif; 
-  color: #333; /* Default text color */
+  color: #333; 
 }
 
 .header {
@@ -13,15 +13,15 @@
 }
 
 .header h1 {
-  font-size: 32px; /* Updated font size */
-  font-weight: 700; /* Bold weight for heading */
-  color: #3a3a3a; /* Updated color */
+  font-size: 32px;
+  font-weight: 700; 
+  color: #3a3a3a;
   padding-bottom: 15px;
 }
 
 .header p {
   font-size: 16px;
-  color: #6f6f6f; /* Updated color */
+  color: #6f6f6f; 
 }
 
 .statsSection {
@@ -50,16 +50,16 @@
 }
 
 .statCard h3 {
-  font-size: 32px; /* Updated font size */
+  font-size: 32px; 
   margin: 0;
-  font-weight: 600; /* Updated font weight */
-  color: #007bff; /* Primary color */
+  font-weight: 600; 
+  color: #007bff; 
 }
 
 .statCard p {
   font-size: 16px;
   margin-top: 8px;
-  color: #6f757d; /* Muted gray */
+  color: #6f757d; 
 }
 
 .updatesSection,
@@ -97,5 +97,5 @@
 .tipsSection li::before {
   content: "•";
   margin-right: 10px;
-  color: #007bff; /* Primary color */
+  color: #007bff; 
 }

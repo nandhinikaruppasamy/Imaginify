@@ -1,0 +1,139 @@
+/* Container for the page */
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+  }
+  
+  /* Header section */
+  .header {
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #3a3a3a;
+    padding-bottom: 15px;
+  }
+  
+  .header p {
+    font-size: 16px;
+    color: #6f6f6f;
+  }
+  
+  /* Search Section */
+  .searchSection {
+    margin-bottom: 20px;
+  }
+  
+  .searchInput {
+    padding: 10px;
+    width: 300px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .searchInput:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .searchButton {
+    padding: 10px 20px;
+    background-color: #6f42c1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .searchButton:hover {
+    background-color: #653bb2;
+    transform: scale(1.05);
+  }
+  
+  /* Loading and Error Text */
+  .loadingText,
+  .errorText {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .errorText {
+    color: red;
+  }
+  
+  /* Image Gallery Section */
+  .imageGallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .imageCard {
+    cursor: pointer;
+  }
+  
+  .image {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Lightbox Modal */
+  .lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .lightboxContent {
+    position: relative;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .lightboxImage {
+    max-width: 100%;
+    max-height: 80vh;
+    border-radius: 8px;
+  }
+  
+  .downloadButtonContainer {
+    margin-top: 20px;
+  }
+  
+  .downloadButton {
+    padding: 10px 20px;
+    background-color: #6f42c1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .downloadButton:hover {
+    background-color: #45a049;
+  }
+  

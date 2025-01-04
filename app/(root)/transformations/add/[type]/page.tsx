@@ -6,11 +6,12 @@ import { auth } from '@clerk/nextjs/server';
 import { redirect } from 'next/navigation';
 import RestoreImageActions from '@/form-handling/RestoreImageActions';
 import ImageGeneration from '@/generative-fill/ImageGeneration';
+import ImageSearchApp from '@/generative-fill/ImageGallery';
 // import ImageCompression from '@/form-handling/ImageCompression';
 // import ImageConversion from '@/form-handling/ImageConversion';
 // import TextImageGenerator from '@/components/TextImageGenerator';
 import TextToImageGenerator from '@/image-generation/TextToImageGenerator';
-import App from '@/image-generation/App'
+import ImageEditor from '@/generative-fill/ImageCaption';
 const AddTransformationTypePage = async ({ params: { type } }: SearchParamProps) => {
   const { userId } = auth();
   const transformation = transformationTypes[type];
@@ -25,10 +26,10 @@ const AddTransformationTypePage = async ({ params: { type } }: SearchParamProps)
         return <ImageGeneration />;
       case 'Restore Image':
         return <RestoreImageActions />;
-      case 'Object Remove':
-        return <App />;
-      // case 'Object Recolor':
-      //   return <ObjectRecolor />;
+      case 'Image Edit':
+        return <ImageEditor />;
+      case 'Image Gallery':
+        return <ImageSearchApp />;
       case 'Background Remove':
         return <BackgroundRemove/>
       default:
